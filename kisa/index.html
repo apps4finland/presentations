@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="fi">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Apps4Finland 2013 -kilpailu</title>
+
+		<meta name="description" content="Apps4Finland-kilpailun toimintamalli vuonna 2013">
+		<meta name="author" content="Petri Kola">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<!-- Analytics-->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-32020206-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Kalvot -->
+			<div class="slides">
+
+				<!-- otsikko ja pikalinkit -->
+
+				<section id="etusivu">
+					<h2>uusi</h2>
+					<h1>Apps4Finland</h1>
+					<h4>avoimen datan innovaatiokilpailu vuonna 2013</h4>
+
+					<p>
+						<small>Projektipäällikkö Petri Kola / <a href="http://twitter.com/pe3">@pe3</a></small>
+						<br>
+						<small>esityksen versio 0.9 (31.5.2013)</small>
+					</p>
+					<aside class="notes">
+							Puhuja-muistiinpanot aukeavat uuteen ikkunaan s-näppäimellä.
+					</aside>
+				</section>
+
+				<section id="sisalto">
+					<h2>Sisältö (1/2)</h2>
+					<h4>(huom: väliotsikoita voi klikata)</h4>
+					<table border="1">
+						<tr>
+							<td>Kilpailu</td>
+							<td><a href="#/avoindata">Taustaa avoimesta datasta</a></td>
+						</tr>								
+						<tr>
+							<td></td>
+							<td><a href="#/uudistus">Kilpailun uudistaminen</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/paasarjat">Pääsarjat</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/haastesarjat">Haastesarjat</a></td>
+						</tr>
+						<tr>
+							<td>Tuki-instrumentit</td>
+							<td><a href="#/tukipaketti">Tukipaketit</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/kysymyspalvelu">Kysymyspalvelu</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/github-tukikohta">GitHub-tukikohta</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/laboratorio">Apps4Finland-laboratorio</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/koulutusta">Koulutusta</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/camp">Apps4Finland Camp</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/paatostilaisuus">Päätöstilaisuus</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/jatkokehityspaiva">Jatkokehityspäivä</a></td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h2>Sisältö (2/2)</h2>
+					<h4>(huom: väliotsikoita voi klikata)</h4>
+					<table border="1">
+						<tr>
+							<td>Kumppanuusohjelma</td>
+							<td><a href="#/jarjestajakumppani">Järjestäjäkumppanit</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/haastekumppani">Haastekumppanit</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/valmentaja">Valmentajat</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/ongelmanratkaisuyhteiso">Ongelmanratkaisuyhteisöt</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/sponsori">Sponsorit</a></td>
+						</tr>
+						<tr>
+							<td>Osallistuminen</td>
+							<td><a href="#/aikataulu">Aikatalu</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/viestinta">Viestintä</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/julkistustilaisuus">Julkistustilaisuus</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#/yhteystiedot">Yhteystiedot</a></td>
+						</tr>
+					</table>
+				</section>
+
+				<!-- hauskaa ja kunnianhimoista  -->
+
+				<section>
+					<section>
+						<h4>jokavuotinen</h4>
+						<h1>avoimen datan innovaatio- kilpailu</h1>
+						<h4>Järjestäjät: <a href="http://www.verkkodemokratia.fi/">Verkkodemokratiaseura</a> ja <a href="http://www.forumvirium.fi/">Forum Virium Helsinki</a></h4>
+					</section>
+				</section>
+
+				<section id="avoindata">
+					<h1>avoin data</h1>
+					<h4>ilmaista raaka-ainetta liiketoimintaan</h4>
+					<h4>tietovallan jakamista demokratian aktivoimiseen</h4>
+					<h4>keino hallinnon tehostamiseen</h4>
+				</section>
+
+				<section>
+					<h1>hallinto edelläkävijänä</h1>
+					<h4><a href="http://www.vm.fi/vm/fi/05_hankkeet/02381_avoin_tieto/index.jsp">Valtion avoimen tiedon ohjelma</a></h4>
+					<h4><a href="http://www.hri.fi/fi/">Helsinki Region Infoshare</a></h4>
+					<h4><a href="http://www.hermia.fi/opendatatre/">Open Data Tampere Region</a></h4>
+				</section>
+
+				<section>
+					<h2>lisää aiheesta</h2>
+					<a href="http://julkinendata.fi/"><img width="200" height="280" src="img/julkinen-data.png" alt="Julkinen Data -kirja"></a>
+					<a href="http://www.hri.fi/2vuotta/"><img width="200" height="280" src="img/hri-2v.png" alt="HRI 2v -kirja"></a>
+				</section>
+
+				<section>
+					<h3>...mutta</h3>
+					<h1>aktiivien mielestä</h1>
+				</section>
+
+				<section>
+					<h2>suomenmestaruus</h2>
+					<img width="800" height="494" src="img/Vappu_yangtsefly.jpg" alt="Suomen lippu">
+					<h2>joka pitää voittaa!</h2>
+				</section>
+
+				<section>
+					<h1>kilpailu uudistuu</h1>
+					<h3>2009-2010</h3>
+					<h4>datan avaamisen kannustaminen</h4>
+
+					<h3>2011-2012</h3>
+					<h4>datan käytön tukeminen</h4>
+				</section>
+
+				<section>
+					<h1>2013</h1>
+				</section>
+
+
+				<!-- hauskaa ja kunnianhimoista  -->
+				<!-- enemmän tukea   -->
+
+
+				<section id="uudistus">
+					<h3>kisasta</h3>
+					<h1>mekanismi</h1> 
+					<h3>isojen</h3> 
+					<h1>ongelmien ratkomiseen</h1>
+					<h3>pala palalta</h3>
+				</section>
+
+				<section>
+					<h4>kilpailussa on</h4>
+					<h2>syntynyt</h2>
+					<h1>tekemiseen innostavia töitä</h1>
+				</section>
+
+				<section>
+					<h2>Helsinki Public Transport Visualized</h2>
+					<iframe width="560" height="315" src="http://www.youtube.com/embed/qGllzWt0acU" frameborder="0" allowfullscreen></iframe>
+					 <h4>näyttää mitä avautuva paikkatieto mahdollistaa</h4>
+				</section>
+				
+				<section>
+					<h4>lisäksi kilpailussa on syntynyt</h4>
+					<h1>ratkaisuja</h1>
+					<h3>suomalaisten</h3>
+					<h1>ongelmiin</h1>
+				</section>
+
+				<section>
+					<h2>BlindSquare</h2>
+					<img width="265" height="400" src="img/BlindSquare_IleJaRonja.jpg" alt="Ilkka ja Ronja">
+					<h4>Miten helpottaa näkövammaisten liikkumista?</h4>
+				</section>
+				<section>
+					<h2>Veropuu</h2>
+					<img width="620" height="420" src="img/veropuu.jpg" alt="Hämeenlinnan veropuu">
+					<h4>Miten nopeuttaa budjettien hahmottamista?</h4>
+				</section>
+				<section>
+					<h2>Espoon auringonvalo- ja maalämpökartta</h2>
+					<img width="512" height="300" src="img/Aurinkoenergiakartta-sample.jpg" alt="energiakarttanäyte">
+					<h4>Datalla voi tukea muiden ongelmaan tarttumista</h4>
+				</section>
+				<section>
+					<h3>Datapohjaiset ratkaisut</h3>
+					<h1>skaalautuvat</h1>
+					<h4>ja ovat parhaimmillaan todella hyviä investointeja</h4>
+				</section>
+				<section>
+					<h2>Joukkoliikenteen kehittäminen Reittioppaan dataa avaamalla</h2>
+					<blockquote cite="http://www.hri.fi/fi/ajankohtaista/datan-avaaminen/hsln-joukkoliikennedata/">
+					&ldquo;Vaikea kuvitella miten olisimme itse saaneet aikaiseksi tällaisen palvelutason nousun näillä resursseilla. Jos olisimme alkaneet tehdä kännykkäsovelluksia itse, rahaa olisi mennyt helposti 50 000 euroa per sovellus&rdquo;
+					</blockquote>
+					<p>Jari Honkonen / HSL</p>
+				</section>
+
+				<section>
+					<h4>haluamme tarjota</h4>
+					<h3>enemmän</h3>
+					<h1>tukea ongelmien ratkaisemiseen</h1>
+					<h4>joskus jo tieto ongelman olemassaolosta riittää</h4>
+				</section>
+
+				<section>
+					<h4>ja</h4>
+					<h2>lääkettä<h2>
+					<h1>analyysi- paralyysiin</h1>
+				</section>
+
+				<section>
+					<h3>kerralla koko ongelman ratkaisemisen sijaan</h3>
+					<h1>suoraan käsiksi<h1>
+					<h2>kokeiluista oppien</h2>
+					<h4>(kuten hackathon-työpajoissa tehdään)</h4>
+				</section>
+
+				<section>
+					<h3>ongelmien ratkaisemisen lisäksi</h3>
+					<h2>kilpailussa palkitaan</h2>
+					<h1>luovuutta ja uteliaisuutta</h1>
+				</section>
+
+				<section>
+					<h1>Sääntöjen</h1>
+					<h3>mukaan</h3>
+					<h1>riittää</h1>
+					<h3>että:</h3>
+					<blockquote cite="http://www.hri.fi/fi/ajankohtaista/datan-avaaminen/hsln-joukkoliikennedata/">
+					&ldquo;Kilpailutöiden tulee käyttää vähintään yhtä suomalaista tai muuten suomalaisille merkityksellistä avoimen datan lähdettä&rdquo;
+					</blockquote>
+				</section>
+
+
+				<!-- uusiutuneet pääsarjat -->
+				<section id="paasarjat">
+					<h1>pääsarjat uudistuvat</h1>
+				</section>
+
+				<section>
+					<h2>sarjat</h2>
+					<h3>määritellään töiden</h3>
+					<h1>vaikutuksen</h1>
+					<h2>eikä töiden</h2>
+					<h1>ulkoisen olemuksen</h1>
+					<h2>mukaan</h2>
+				</section>
+
+				<section>
+					<h1>innosta</h1>
+					<h4>ideasarjan perillinen, ilmaisua painottavat työt, ongelmanratkaisupaineista vapaa</h4>
+					<h1>hahmota</h1>
+					<h4>visualisointisarjan perillinen analyysipainotuksella</h4>
+					<h1>vaikuta</h1>
+					<h4>kutakuin entinen sovellussarja</h4>
+					<h1>mahdollista</h1>
+					<h4>datan avaus- ja dataopas sarjat sekä avoin lähdekoodi</h4>
+				</section>
+
+				<section>
+					<h1>palkintorahaa</h1>
+					<h3>pääsarjoissa</h3>
+					<h4>viime vuoden tapaan noin</h4>
+					<h1>15 000</h1>
+					<h3>euroa</h3>
+				</section>
+	
+				<!-- välislaidi: tänä vuonna kisa uudistuu ongelmanratkaisulähtöiseksi
+				- edelleen avoimen datan kisana säilyen
+				 -->
+				
+				<section id="haastesarjat">
+					<h4>ongelmanratkaisuvetoiset</h4>
+					<h1>haastesarjat korvaavat</h1>
+					<h4>viime vuoden</h4>
+					<h2>erikoispalkinnot</h2>
+				</section>
+
+				<section>
+					<h3>kehitteillä olevia</h3>
+					<h1>teemoja</h1>
+					<h3>
+						<ol>
+							<li>Terveys ja hyvinvointi</li>
+							<li>Kulttuuri ja historia (turismi)</li>
+							<li>Demokratia  ja kommunikaatio</li>
+							<li>Liikenne ja energia</li>
+						</ol>
+					</h3>
+					<h4>lopulliset teemat riippuvat mukaanlähtevistä kumppaneista</h4>
+				</section>
+				<section>
+					<h3>teemoihin kootaan 1-6</h3> 
+					<h2>haastetta</h2>
+					<h3>joissa kohtaavat:</h3>
+					<h1>epäkohta</h1>
+					<h1>data</h1>
+					<h3>ja</h3>
+					<h1>ratkaisijat</h1>
+				</section>
+				<section>
+					<h2>hyvä haaste</h2>
+					<h3>1. epäkohta</h3>
+					<h4>esim. kaupunkilainen ei saa tietoa päätöksistä</h4>
+					<h3>2. data</h3>
+					<h4>esim. Ahjo-järjestelmän sisältämä informaatio</h4>
+					<h3>3. ratkaisijayhteisö</h3>
+					<h4>esim. open democracy finland FB-ryhmä</h4>
+					<h3>4. yhdyshenkilö / valmentaja</h3>
+					<h4>esim. open knowledge finland ry:n aktiivi</h4>
+					<h3>5. mahdolliset hyödyt</h3>
+					<h4>esim. kaupunkilaisten tyytyväisyys</h4>
+					<h3>6. inspiroiva tapa kommunikoida</h3>
+					<h4>kilpailun järjestäjät auttavat</h4>
+				</section>
+
+				<section>
+					<h2>kilpailijoiden ja kumppanien</h2>
+					<h3>tueksi luodaan</h3>
+					<h1>tukiverkosto</h1>
+				</section>
+
+				<section>
+					<h4>tavoitteena on nostaa</h4>
+					<h1>suomi</h1>
+					<h4>avoimen datan hyödyntämisen</h4>
+					<h1>kärkimaaksi</h4>
+					<h4>lisäämällä yhteispelin kellotaajuutta</h4>
+				</section>
+
+				<section>
+					<h4>apps4finland tuottaa joukon</h4>
+					<h1>instrumentteja</h1>
+					<h2>yhteispelin kehittämiseksi</h2>
+				</section>
+
+				<section id="tukipaketti">
+					<h4>instrumentti 1</h4>
+					<h4>jokaisen haasteen ratkaisemisen tueksi kootaan</h4>
+					<h1>tukipaketti</h1>
+					<h4>eli GitHubiin koottava</h4>
+					<h3>esiselvitys ja linkkilista</h3>
+					<h4>josta on hyötyä ongelman ratkaisemisessa kisan jälkeenkin</h4>
+				</section>
+
+				<section id="kysymyspalvelu">
+					<h4>instrumentti 2</h4>
+					<h4>kilpailijoille tarjotaan</h4>
+					<h1>kysymyspalvelu</h1>
+					<h4>jossa</h4>
+					<h3>kumppanit vastaavat kilpailijoiden avoimeen dataan liittyviin kysymyksiin</h3>
+				</section>
+
+				<section id="github-tukikohta">
+					<h4>instrumentti 3</h4>
+					<h1>github-tukikohta</h1>
+					<h4>kumppaniverkoston toiminnan organisoimiseen</h4>
+					<h4>tuotoksien jakamiseen perustuvan toimintamallin omaksumiseen</h4>
+					<h4></h4>
+				</section>
+
+				<section id="laboratorio">
+					<h4>instrumentti 4</h4>
+					<h1>apps4finland-laboratorio</h1>
+					<h4>kumppanit julkaisevat kisan aikana pieniä datan hyödyntämis- ja yhdistelykokeiluja avoimena lähdekoodina githubissa</h4>
+				</section>
+
+				<section id="koulutusta">
+					<h4>instrumentti 5</h4>
+					<h1>koulutusta kumppaneille ja valmentajille</h1>
+					<h4>kumppaneille tarjotaan avoimen datan verkostoon ja githubin käyttöön liittyvää koulutusta</h4>
+				</section>
+
+				<section id="camp">
+					<h4>instrumentti 6</h4>
+					<h1>apps4finland camp</h1>
+					<h4>syksyn aikana järjestetään tapahtuma, jossa kilpailutöiden edistämistä tuetaan</h4>
+				</section>
+
+				<section id="paatostilaisuus">
+					<h4>instrumentti 7</h4>
+					<h1>päätöstilaisuus</h1>
+					<h4>kilpailu huipentuu palkintojenjakotapahtumaan, jossa esitellään parhaita kilpailutöitä</h4>
+					<h4>tapahtumasta tehdään avoimen tiedon näyteikkuna</h4>
+				</section>
+
+				<section id="jatkokehityspaiva">
+					<h4>instrumentti 8</h4>
+					<h1>jatkokehitys- päivä</h1>
+					<h4>päätöstilaisuuden jälkeen järjestetään tapahtuma, jossa kilpailijoille tarjotaan mahdollisuus hakeutua erilaisille jatkokehityspoluille</h4>						
+				</section>
+
+				<!-- ennennäkemätön yhteistyö perustuu rooleihin -->
+				<section id="kumppanuudet">
+					<h4>uusi kumppanien roolitus</h4>
+					<h4>kiihdyttää ja levittää datan hyödyntämistä</h4>
+					<h1>kumppanuudet</h1>
+					<h2>järjestäjäkumppanit</h2>
+					<h2>haastekumppanit</h2>
+					<h2>valmentajat</h2>
+					<h2>ongelmanratkaisuyhteisöt</h2>
+					<h2>sponsorit</h2>
+				</section>
+
+				<!-- järjestäjäkumppanuus -->
+
+				<section id="jarjestajakumppani">
+					<h1>Järjestäjä- kumppanit</h1>
+					<blockquote>
+					Edelläkävijäministeriöitä, -virastoja ja muita organisaatioita, joiden asiaa datan avaamisen aktiivinen edistäminen tukee.
+					</blockquote>
+				</section>
+				<section>
+					<h4>Järjestäjäkumppanin</h4>
+					<h2>panostus</h2>
+					<ul>
+						<li>yhteistyön laajuudesta riippuen 12000-30000 euroa</li>
+						<li>ihmisten työaikaa</li>
+						<li>tiloja kumppanitoimintaan</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Järjestäjäkumppanin</h4>
+					<h2>osallistuminen</h2>
+					<ul>
+						<li><a href="#/laboratorio">Apps4Finland-laboratorion</a> toimintaan</li>
+						<li><a href="#/tukipaketti">tukipakettien</a> laatimiseen</li>
+						<li><a href="#/kysymyspalvelu">kysymyspalvelun</a> toimintaan</li>
+						<li><a href="#/github-tukikohta">GitHub-tukikohdan</a> toimintaan</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Järjestäjäkumppanin</h4>					
+					<h2>hyödyt</h2>
+					<ul>
+						<li>roolin vahvistuminen avoimen datan kentässä</li>
+						<li>kokemusta datalähtöisestä ongelmanratkaisusta ja avoimista toimintatavoista</li>
+						<li>lisääntynyt kehittäjäystävällisyys</li>
+						<li>näkyvyys kisan verkkosivustolla, viestinnässä ja päätöstapahtumassa</li>
+						<li>yhteys aktiivikehittäjiin, uusia kontakteja</li>
+						<li>mahdollisuus osallistua koulutukseen</li>					
+					</ul>
+				</section>
+				
+
+
+				<!-- haastekumppanuus -->
+
+				<section id="haastekumppani">
+					<h1>Haaste- kumppanit</h1>
+					<blockquote>
+					Organisaatioita, jotka haluavat ratkoa ongelmia datalähtöisen kokeilevan kehittämisen keinoin ja verkostoitua avoimen tiedon tekijöiden kanssa.
+					</blockquote>
+				</section>
+				<section>
+					<h4>Haastekumppanin</h4>
+					<h2>panostus</h2>
+					<ul>
+						<li>5000 €</li>
+						<li>osallistuminen haasteen valmisteluun</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Haastekumppanin</h4>					
+					<h2>osallistuminen</h2>
+					<ul>
+						<li>valittujen ongelmien työstämiseen haasteiksi ja <a href="#/tukipaketti">tukipaketeiksi</a></li>
+						<li><a href="#/github-tukikohta">GitHub-tukikohdan</a> toimintaan</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Haastekumppanin</h4>					
+					<h2>hyödyt</h2>
+					<ul>
+						<li>ongelman kannalta keskeisten tietovarantojen ja kehittäjäyhteisöjen tunnistaminen</li>
+						<li>ongelman esittäminen kehittäjiä innostavassa muodossa</li>
+						<li>mahdollisuus löytää uusia ratkaisuja ongelmiin</li>
+						<li>näkyvyys kisan verkkosivustolla, viestinnässä ja päätöstapahtumassa</li>
+						<li>uusia kontakteja</li>
+						<li>mahdollisuus osallistua koulutukseen</li>
+					</ul>
+				</section>				
+
+
+				<!-- valmentaja -->
+
+				<section id="valmentaja">
+					<h1>Valmentajat</h1>
+					<blockquote>
+					Henkilöitä, jotka haluavat omalla osaamisellaan tukea avoimen tiedon toimijaverkoston  kehittymistä ja itse oppia uutta.
+					</blockquote>
+				</section>
+				<section>
+					<h4>Valmentajan</h4>
+					<h2>panostus</h2>
+					<ul>
+						<li>työaikaa</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Valmentajan</h4>					
+					<h2>osallistuminen</h2>
+					<ul>
+						<li>kumppanien ja haasteteemojen keräämiseen</li>
+						<li>valittujen ongelmien työstämiseen haasteiksi ja <a href="#/tukipaketti">tukipaketeiksi</a></li>
+						<li><a href="#/github-tukikohta">GitHub-tukikohdan</a> toimintaan</li>
+						<li>kilpailijoiden tukeminen haasteiden ratkaisemisessa</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Valmentajan</h4>					
+					<h2>hyödyt</h2>
+					<ul>
+						<li>kokemusta datalähtöisestä ongelmanratkaisusta ja avoimista toimintatavoista</li>
+						<li>näkyvyys kisan verkkosivustolla, viestinnässä ja päätöstapahtumassa</li>
+						<li>uusia kontakteja</li>
+						<li>mahdollisuus osallistua koulutukseen</li>
+					</ul>
+				</section>
+
+				<!-- ammatillistamiskumppanuus -->
+
+				<section id="ongelmanratkaisuyhteiso">
+					<h1>Ongelman- ratkaisu- yhteisöt</h1>
+					<blockquote>
+					Verkostoja tai yhteisöjä, jotka etsivät ratkaisuja tiettyihin ongelmiin.
+					</blockquote>
+				</section>
+				<section>
+					<h4>Ongelmanratkaisuyhteisön</h4>
+					<h2>panostus</h2>
+					<ul>
+						<li>työaikaa</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Ongelmanratkaisuyhteisön</h4>
+					<h2>osallistuminen</h2>
+					<ul>
+						<li>yhtöisö nimää yhteyshenkilön</li>
+						<li>valittujen ongelmien työstämiseen haasteiksi ja <a href="#/tukipaketti">tukipaketeiksi</a></li>
+						<li>haasteiden ratkaisuun osallistuminen</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Ongelmanratkaisuyhteisön</h4>					
+					<h2>hyödyt</h2>
+					<ul>
+						<li>kokemusta datalähtöisestä ongelmanratkaisusta ja avoimista toimintatavoista</li>
+						<li>uusia kontakteja</li>
+						<li>mahdollisuus löytää uusia ratkaisuja ongelmiin</li>
+					</ul>
+				</section>
+
+				<!-- ammatillistamiskumppanuus -->
+
+
+
+				<section id="sponsori">
+					<h1>Sponsori</h1>
+					<blockquote>
+					Avoimen tiedon toimijaverkostoon mukaan haluavia organisaatioita, joille muut kumppanuusmuodot ovat tänä vuonna liian raskaita.
+					</blockquote>
+				</section>
+				<section>
+					<h4>Sponsorin</h4>
+					<h2>panostus</h2>
+					<ul>
+						<li>4000 €</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Sponsorin</h4>
+					<h2>osallistuminen</h2>
+					<ul>
+						<li>pääsy <a href="#/github-tukikohta">GitHub-tukikohtaan</a></li>
+						<li>haluttaessa ständi <a href="#/paatostilaisuus">päätöstilaisuuteen</a></li>
+					</ul>
+				</section>
+				<section>
+					<h4>Sponsorin</h4>
+					<h2>hyödyt</h2>
+					<ul>
+						<li>tietoa avoimista toimintatavoista</li>
+						<li>näkyvyys kisan verkkosivustolla, viestinnässä ja päätöstapahtumassa</li>
+						<li>uusia kontakteja</li>
+					</ul>
+				</section>
+
+				
+
+				<!-- aikataulu -->
+				
+				<section>
+						<h3>miten mukaan?</h3>
+				</section>
+
+				<section id="aikataulu">
+					<h4>vuoden 2013</h4>
+					<h1>Aikataulu</h1>
+					<h3>noudattaa aikaisempien vuosien rytmiä</h3>
+				</section>
+				<section>
+					<h2></h2>
+					<ul>
+						<li>kumppaniverkoston rakentaminen käynnissä</li>
+						<li>kilpailun julkistustilaisuus 14.6.</li>
+						<li>deadline: loka-marras vaiheessa</li>
+						<li>päätöstilaisuus: marras-joulu vaihteessa</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Mukaan pääsee vielä myöhemminkin</h2>
+					<h3>kumppaneita ja valmentajia otetaan mukaan kolmessa aallossa</h3>
+				</section>
+
+
+				<!-- viestintä -->
+
+				<section id="viestinta">
+					<h1>seuraa kisan viestintää</h1>
+					<ul>
+						<li><a href="http://apps4finland.fi">verkkosivut</a></li>
+						<li><a href="https://twitter.com/apps4fi">Twitter</a></li>
+						<li><a href="https://www.facebook.com/Apps4Finland">Facebook</a></li>
+					</ul>
+				</section>
+
+				<section id="julkistustilaisuus">
+					<h2>Julkistustilaisuus</h2>
+					<h3>Bio Rexin terassilla 14.6.2013</h3>
+					<img width="375" height="500" src="img/1283899758_0b3036071f_z.jpg" alt="Bio Rex">
+				</section>
+
+				<!-- yhteydenotot -->
+
+				<section id="yhteystiedot">
+					<h1>OTA YHTEYTTÄ</h1>
+					<h4>petri.kola@forumvirium.fi</h4>
+					<h4>+358401626525</h4>
+					<h4>twitter: <a href="http://twitter.com/pe3">@pe3</a></h4>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'page',
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
